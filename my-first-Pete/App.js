@@ -1,32 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import App from './src/App';
 
-export default function App() {
-  console.log('Expo React Native');
-
-  const name = 'Gyumin';
-  const isFullname = true;
-
-  const add = (a, b) => {
-    return a + b;
-  };
-
-  return (
-    <View style={styles.container}>
-      {/* 와 샌즈 */}
-      <Text>My name is {name}</Text>
-      <Text>a + 2 = {add(1, 2)}</Text>
-      <Text>{isFullname ? name + ' kim' : name}</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#fff',
-  },
-});
+export default App;

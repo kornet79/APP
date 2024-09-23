@@ -1,16 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import SignInScreen from './screen/SignInScreen';
 
-export default function App() {
+const SignInScreen = () => {
   return (
     <View style={styles.container}>
-      <StatusBar style="dark" />
-      <Text style={{ fontSize: 30 }}>ToDo App</Text>
-      <SignInScreen />
+      <Image
+        source={require('../../assets/ch4_assets/test.png')}
+        style={style.Image}
+      />
+      <Text>SignIn Screen</Text>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -20,3 +20,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
 });
+
+export default SignInScreen;
